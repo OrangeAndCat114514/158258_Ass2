@@ -1,0 +1,273 @@
+﻿.w {
+    width: 1200px;
+    margin: auto;
+    /* 定义版心 宽度是1200px maigin auto的意思是水平居中 */
+}
+body {
+    background-color: #f3f5f7;
+    /* height: 3000px; */
+    font-family:'CAC';
+}
+
+li {
+    list-style-type: none;
+    /* 清楚li前面的点 */
+}
+
+a {
+    text-decoration: none;
+    /* 去掉链接的下划线 */
+}
+
+@font-face {
+    font-family: 'CAC';
+    src: url('/Content/Font/cac_champagne.ttf') format('woff');
+}
+
+.banner {
+    height: 421px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-container {
+    width: 1200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+    .img-container img {
+        width: 100%; /* 设置图片宽度为容器的100% */
+        height: auto; /* 设置高度自适应 */
+    }
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 36px;
+    cursor: pointer;
+    z-index: 1;
+    padding: 5px;
+    padding-bottom: 70px;
+}
+
+
+.prev {
+    left: 100px;
+}
+
+.next {
+    right: 100px;
+}
+
+.indicators {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #888;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #333;
+}
+
+.movies {
+    height: 60px;
+    background-color: white;
+    box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    line-height: 60px;
+    /* 孩子会继承行高 */
+}
+
+    .movies h3 {
+        float: left;
+        margin-left: 45px;
+        font-size: 16px;
+        line-height: 35px;
+        margin-top: 15px; 
+    }
+
+
+.mod {
+    float: right;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #00a4ff;
+}
+
+.box {
+    margin-top: 30px;
+}
+
+
+
+.box-bd {
+    margin-left: -33px;
+}
+
+    .box-bd ul {
+        width: 1300px;
+        /* 根据padding实际修改 */
+    }
+
+        .box-bd ul li {
+            float: left;
+            width: 200px;
+            height: 270px;
+ 
+            margin-right: 50px;
+            margin-bottom: 60px;
+        }
+
+    
+            .box-bd ul li img {
+                width: 200px;
+                max-height: 100%;
+                /* 这样图片就不会超出盒子的大小 */
+            }
+
+    .box-bd h5 {
+        float:right;
+       
+        font-size: 15px;
+        color: rgb(224, 144, 21);
+    }
+    .box-bd h6 {
+        float: left;
+        color: rgb(51, 119, 170);
+    }
+    .box-bd h6,
+    .box-bd h5 {
+        display: inline-block;
+        
+    }
+
+
+.lunbo {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    text-align: center; /* 文本水平居中 */
+
+}
+
+.prev2,
+.indis,
+.next2 {
+    margin: 5px; /* 可以根据需要添加外边距来调整它们之间的间距 */
+}
+
+.prev2 {
+    float:left;
+    
+}
+
+.next2 {
+  float:right;
+}
+.indis {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.indi {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #888;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #333;
+}
+
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family:'CAC';
+    margin-left:-20px;
+    
+}
+
+.content h2 {
+    font-size: 36px;
+}
+
+.content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+.content li{
+    margin-left:-50px;
+}
+
+
+
+
+
+.content22 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    margin-left:-30px;
+}
+
+    .content22 h2 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .content22 p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .content22 ul {
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+
+    .content22 li {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+
+.pagination-links {
+    margin-left: 120px;
+    display: flex; /* 使用 Flexbox 布局 */
+    align-items: center; /* 垂直居中对齐内部内容 */
+    white-space: nowrap;
+    margin-top: -30px;
+    display: left;
+    font-size: 16px;
+    color: #333; /* 修改文本颜色 */
+    font-weight: bold; /* 加粗文本 */
+    font-family: Arial, sans-serif; /* 修改字体 */
+    background-color: #f0f0f0; /* 添加背景颜色 */
+    padding: 10px; /* 添加内边距 */
+    border: 1px solid #ddd; /* 添加边框 */
+    border-radius: 5px; /* 圆角边框 */
+    display: inline-block; /* 行内块元素，使其水平排列 */
+    margin: 0; /* 移除默认外边距 */
+}
+
+

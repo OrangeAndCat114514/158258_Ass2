@@ -1,0 +1,29 @@
+﻿.search{
+    position:relative;
+    top:18px;
+    margin-right:110px;
+}
+.bsearch {
+    float: right; /* 使用浮动将按钮放在右侧 */
+    margin-right: 40px; /* 可选，用于增加按钮与搜索栏之间的间距 */
+    align-items: center; /* 垂直居中 */
+    
+    transform: translateY(-50%); /* 垂直居中 */
+}
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+

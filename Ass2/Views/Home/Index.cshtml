@@ -1,0 +1,154 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@model Ass2.ViewModels.MovieIndexViewModel
+
+
+
+
+
+
+<main>
+    <!-- banner部分开始 -->
+    <div class="banner w">
+
+        <div class="img-container ">
+            <img class="myImage" src="~/Content/Images/Slideshow/afd.jpg" alt="">
+        </div>
+
+    </div>
+    <div class="click">
+        <div class="arrow prev" onclick="prevImage()">&#10096</div>
+        <div class="arrow next" onclick="nextImage()">&#10095</div>
+    </div>
+    <div class="indicators">
+        <div class="indicator active" onclick="goToImage(0)"></div>
+        <div class="indicator" onclick="goToImage(1)"></div>
+        <div class="indicator" onclick="goToImage(2)"></div>
+        <div class="indicator" onclick="goToImage(3)"></div>
+    </div>
+
+    <!-- banner部分结束 -->
+    <!-- 精品推荐开始 -->
+    <div class="movies w">
+        <h3><strong>Popular movies</strong></h3>
+        <div class="mod">@Html.ActionLink("More>>", "Index", "Movies", new { area = "" }, new { @class = "nav-link" })</div>
+
+    </div>
+    <!-- 精品推荐结束 -->
+    <!-- box核心区域开始 -->
+    <div class="box w">
+        <div class="box-bd ">
+            <ul class="clearfix">
+                <li>
+                    <img src="~/Content/Images/latest/Assault.jpg" alt="Image">
+                    <h6>Assault</h6>
+                    <h5>6.9</h5>
+                </li>
+                <li>
+                    <img src="~/Content/Images/latest/Harold Fry.jpg" alt="Image">
+                    <h6>Harold Fry</h6>
+                    <h5>7.4</h5>
+                </li>
+                <li>
+                    <img src="~/Content/Images/latest/Inference.jpg" alt="Image">
+                    <h6>Inference</h6>
+                    <h5>6.8</h5>
+                </li>
+                <li>
+                    <img src="~/Content/Images/latest/Sleep.jpg" alt="Image">
+                    <h6>Sleep</h6>
+                    <h5>5.8</h5>
+                </li>
+                <li>
+                    <img src="~/Content/Images/latest/The Burial.jpg" alt="Image">
+                    <h6>The Burial</h6>
+                    <h5>7.0</h5>
+                </li>
+                <li>
+                    <img src="~/Content/Images/latest/Beautiful diaster.jpg" alt="Image">
+                    <h6>Beautiful diaster</h6>
+                    <h5>5.5</h5>
+                </li>
+                <li>
+                    <img src="~/Content/Images/latest/Oh My God.jpg" alt="Image">
+                    <h6>Oh My God</h6>
+                    <h5>7.3</h5>
+                </li>
+                <li>
+                    <img src="~/Content/Images/latest/Shyloch's children.jpg" alt="Image">
+                    <h6>Shyloch's children</h6>
+                    <h5>6.8</h5>
+                </li>
+                <li>
+                    <img src="~/Content/Images/latest/She is so sweet.jpg" alt="Image">
+                    <h6>She is so sweet</h6>
+                    <h5>6.8</h5>
+                </li>
+                <li>
+                    <img src="~/Content/Images/latest/Roman Prince.jpg" alt="Image">
+                    <h6>Roman Prince</h6>
+                    <h5>7.2</h5>
+                </li>
+                <li>
+                    <img src="~/Content/Images/hot/AnatomyOfAFall.jpg" alt="Image">
+                    <h6>Anatomy of a fall</h6>
+                    <h5>8.4</h5>
+                </li>
+                <li>
+                    <img src="~/Content/Images/hot/SawX.jpg" alt="Image">
+                    <h6>Saw X</h6>
+                    <h5>7.6</h5>
+                </li>
+                <li>
+                    <img src="~/Content/Images/hot/LongLiveLove.jpg" alt="Image">
+                    <h6>Long Live Love</h6>
+                    <h5>7.6</h5>
+                </li>
+                <li>
+                    <img src="~/Content/Images/hot/TheKiller.jpg" alt="Image">
+                    <h6>The Killer</h6>
+                    <h5>6.7</h5>
+                </li>
+
+                <li>
+                    <img src="~/Content/Images/hot/OldDads.jpg" alt="Image">
+                    <h6>Old Dads</h6>
+                    <h5>6.4</h5>
+                </li>
+                <li>
+                    <img src="~/Content/Images/hot/Passed Through the storm.jpg" alt="Image">
+                    <h6>Passed Through storm</h6>
+                    <h5>6.6</h5>
+                </li>
+                <li>
+                    <img src="~/Content/Images/hot/Sound Of Freedom.jpg" alt="Image">
+                    <h6>Sound Of Freedom</h6>
+                    <h5>7.8</h5>
+                </li>
+                <li>
+                    <img src="~/Content/Images/hot/Revenge.jpg" alt="Image">
+                    <h6>Revenge</h6>
+                    <h5>6.9</h5>
+                </li>
+
+                <li>
+                    <img src="~/Content/Images/hot/Nowhere.jpg" alt="Image">
+                    <h6>Nowhere</h6>
+                    <h5>7.0</h5>
+                </li>
+
+                <li>
+                    <img src="~/Content/Images/hot/Learn From Dad.jpg" alt="Image">
+                    <h6>Learn From Dad</h6>
+                    <h5>6.1</h5>
+                </li>
+            </ul>
+        </div>
+        <div class="pag">
+        <button id="prevPage">Prev Page</button>
+        <button id="nextPage">Next Page</button>
+    </div>
+    </div>
+    <!-- box核心区域结束 -->
+</main>
